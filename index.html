@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="index.js"></script>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="reservations.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="contact.css">
+
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Sora&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Slab:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,300&family=Cinzel:wght@600&display=swap');
+ </style>
+
+</head>
+<body>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="container-fluid" style="background-color:white;position: sticky;top: 0;z-index: 50;display: flex;padding: 0;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%;margin: auto;">
+    
+      
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"style="flex-grow:0;padding-left:0;padding-right:0;" id="navbarCollapse">
+      
+        <div class="navbar-nav" style="font-size:x-large; font-family: 'poppins','sans-serif';">
+          <li><a href="#home" class="nav-item nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-item nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-item nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-item nav-link" id="cn">Contact Us</a></li>
+     </div>   
+        
+        
+      </div>
+  
+    
+    <div id="imgdiv" style="margin: 0 auto;padding-left: 15px;">
+      <img id="logo" src="stick.png" height="100px" >
+  </div>
+    
+    <div class="navbar-nav " style="margin: 0 0 0 auto ;">
+     <li> <a href="#Reservation" class="nav-item nav-link" style="font-family: 'Asap', sans-serif;
+      font-family: 'Cinzel', serif;font-size:2.6rem;position: relative;z-index: 50;">Reservations</a></li>
+      
+  </nav>
+</div>
+</section>
+
+<section id="home">
+<div style="width:100%px;height: 100%;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active" ;>
+        <img src="img/fresh-sweet-chocolate-waffles-with-strawberry.jpg" alt="Los Angeles" style="width: 100%;height: 750px;">
+        <div class="carousel-caption">
+          <h2 style="color:white;"></h2>
+          <h4 style="color: gold; font-style: oblique; font-weight: bold;"></h4>
+        </div>
+      </div>
+
+     
+      <div class="item">
+        <img src="slide img/delicious-fried-chicken-plate.jpg" alt="New york" style="width:100%;height: 750px;">
+        <div class="carousel-caption">
+          <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+        </div>
+      </div>
+     
+      <div class="item">
+        <img src="slide img/pexels-eric-mufasa-1414234-removebg.png" alt="New york" style="width:100%;height: 750px;">
+        <div class="carousel-caption">
+          <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+        </div>
+      </div>
+      <div class="item">
+        <img src="slide img/meat-skewer-with-vegetables-isolated-white-background-ai-generative.jpg" alt="New york" style="width:100%;height: 750px;">
+        <div class="carousel-caption">
+          <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+
+        </div>
+    </div>
+    <div class="item">
+      <img src="slide img/fresh-cheesecake-served-with-mint.jpg" alt="New york" style="width:95%;height: 750px;">
+      <div class="carousel-caption">
+        <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+
+      </div>
+  </div>
+    <div class="item">
+      <img src="slide img/delicious-food-tray.jpg" alt="New york" style="width:100%;height: 750px;">
+      <div class="carousel-caption">
+        <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+      </div>
+    </div><div class="item">
+      <img src="slide img/delicious-tortilla.jpg" alt="New york" style="width:100%;height: 750px;">
+      <div class="carousel-caption">
+        <h3 style="color:gold;font-style: oblique; font-weight: bold;"></h3>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" ></span>
+      <span class="sr-only">Previous</span>
+
+</a>
+<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" ></span>
+  <span class="sr-only">Next</span>
+</a>
+
+    
+  </div>
+</div>
+</section>
+<section id="menu" style="padding-top: 80px;">
+  <br>
+  <center>
+  <h1 style="font-family: 'Bungee Shade', sans-serif;
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Secular One', sans-serif;
+  font-family: 'Sora', sans-serif;">~ OUR MENU ~</h1></center>
+  
+  
+<h1 class="h1" style="font-family: 'Asap', sans-serif;
+font-family: 'Cinzel';color:rgb(175, 88, 0);">Starters</h1>
+
+
+<section class="list">
+        
+<div class="divv">
+    <img  class="image" src="menu/top-view-hummus-plate-still-life.jpg" alt="">
+<h3 class="mh3">Hummus Platter</h3>
+<p>Creamy chickpea dip served with warm pita bread</p>
+</div>
+<div class="divv">
+    <img  class="image" src="menu/tuna-salad-with-lettuce-olives-corn-tomatoes-top-view.jpg" alt="">
+<h3 class="mh3">Mediterranean Salad</h3>
+<p>Fresh greens, tomatoes, cucumbers, and olives with feta cheese 
+    and a zesty dressing</p>
+</div>
+</section>
+
+
+<h1 class="h1" style="font-family: 'Asap', sans-serif;
+font-family: 'Cinzel';color:rgb(175, 88, 0);" >Main Courses</h1>
+<section class="list">
+
+
+<div class="divv1">
+    <img class="image1"  src="menu/dinner-table-with-fried-meat-dishes-sauces (1).jpg" alt="">
+    <h3 class="mh3">Dubai Fusion Platter</h3>
+    <p>A selection of Middle Eastern and international delights, including 
+        shawarma, kebabs, and more</p>
+</div>
+<div class="divv2">
+    <img  class="image2" src="menu/seafood-plate-with-shrimps-mussels-lobsters-served-with-lemon.jpg" alt="">
+    <img  class="image3" src="menu/grilled-trout-with-eggplant-zucchini-bell-pepper-pomegranate-sauce.jpg" alt="">
+    <h3 class="mh3">Grilled Seafood</h3>
+    <p>Freshly caught seafood, seasoned and grilled to perfection, served with 
+        lemon butter sauce</p>
+</div>
+</section>
+
+<h1 class="h1"  style="font-family: 'Asap', sans-serif;
+font-family: 'Cinzel';color:rgb(175, 88, 0);"  >Desserts</h1>
+
+<section class="list">
+
+
+<div class="divv1">
+    <img class="image1" src="menu/freshly-baked-baklava-rustic-wooden-board-generated-by-ai.jpg" alt="">
+    <h3 class="mh3">Baklava</h3>
+    <p>Layers of flaky pastry filled with nuts and honey</p>
+</div>
+<div class="divv2">
+    <img class="image4" src="menu/composition-delicious-homemade-icecream.jpg" alt="">
+    <img class="image5"  src="menu/high-angle-delicious-ice-cream.jpg" alt="">
+   
+    <h3 class="mh3">Saffron Rose Ice Cream</h3>
+    <p>Exquisite saffron-infused ice cream with a hint of rosewater</p>
+</div>
+</section>
+
+
+
+<h1 class="h1"  style="font-family: 'Asap', sans-serif;
+font-family: 'Cinzel';color:rgb(175, 88, 0);">Beverages</h1>
+<section class="list">
+
+<div class="divv1">
+    <img class="image1"  src="menu/glass-orange-juice-with-picture-fruit-right.jpg" alt="">
+    <h3 class="mh3">Freshly Squeezed Juices</h3>
+    <p>A variety of fresh fruit juices</p>
+</div>
+<div class="divv1">
+    <img class="image1" src="menu/cup-coffee-sits-plate-with-desert-landscape-background.jpg" alt="">
+    <h3 class="mh3">Arabic Coffee</h3>
+    <p>Traditional Arabian coffee served with dates</p>
+</div>
+
+</section>
+</section>
+<section id="Reservation" >
+  <div id="divdiv">
+
+<img class="imgr" src="img/pexels-huỳnh-đạt-2313037.jpg" alt="">
+<div id="divvr">
+  
+
+  <form id="login" name="form" action="">
+    <h1 style="color: white;margin-bottom: 12%;">Reservation</h1>
+    <div id="fname">
+    <input id="fnameid" name="fn" type="text" placeholder="Your Name" style="border-width: 0;">
+  </div>
+  <div id="lname">
+    <input id="lnameid" name="ln" type="email" placeholder="Your Email" style="border-width: 0;width: 200px;">
+  </div>
+  <div id="unbox">
+    <input id="inpid" name="mob" type="number" placeholder="Your Phone" style="border-width: 0;">
+  </div>
+  <div id="dtbox">
+    <input id="dt" name="date" type="date" placeholder="Enter Date" style="border-width: 0;">
+  </div>
+  <div id="tmbox">
+    <input id="tm" name="time" type="time" placeholder="Time" style="border-width: 0;">
+  </div>
+  <div id="passbox">
+    <input id="passid" name="guest" type="number" placeholder="Number Of Guests" style="border-width: 0;">
+  </div>
+  <div id="divbutt">
+    <input id="idbutt" type="button" value="Submit" onclick="validates()">
+  </div>
+  
+</form>
+
+</div>
+<center>
+  <h2 style="font-size: x-large;">Please complete the form, and we'll get in touch to confirm your reservation. We look forward to 
+    serving you!</h2>
+    <br>
+  </center>
+    </div>
+    
+    </section>
+    
+
+    <section id="about" style="padding-left: 20px;padding-top: 90px;padding-right: 20px; padding-bottom: 20px;">
+      <center>
+      <h1 style="font-family: 'Bungee Shade', sans-serif;
+      font-family: 'DM Serif Display', serif;
+      font-family: 'Secular One', sans-serif;
+      font-family: 'Sora', sans-serif;color:rgb(175, 88, 0);">ABOUT US</h1>
+    </center>
+
+      <div id="divback" style="background-color: rgba(243, 185, 92, 0.178);padding: 20px;">
+
+        <br>
+    <h2 class="abth2"> Our Story:</h2>
+    <br>
+    <center>
+    <h4 class="abth4">Desert Delights Bistro is where tradition meets innovation. Rooted in Middle Eastern culinary heritage, 
+        we're dedicated to the art of gastronomy.</h4><br>
+      </center>
+    <h2 class="abth2">Mission:</h2>   
+    <center>
+    <h4 class="abth4">Our mission is clear - to provide an unforgettable dining experience that fuses time-honored recipes 
+        with contemporary creativity.</h4><br>
+      </center>
+    <h2 class="abth2">The Team:</h2>
+    <center>
+    <h4 class="abth4">Our talented chefs and dedicated staff bring a passion for excellence to every plate, ensuring your 
+        culinary adventure is truly special.</h4><br>
+      </center>
+        <h2 class="abth2">The Experience:</h2>
+        <br>
+        <center>
+        <h4 class="abth4">Join us for a gastronomic journey through the flavors of Dubai. Every dish at Desert Delights Bistro is 
+            a celebration of flavor, culture, and the joy of sharing a table</h4>
+          </center> <br>
+          <center>
+        <h4 class="abth4">Welcome to Desert Delights Bistro, where every meal tells a story and every guest is family</h4>
+    <br>
+    </center> 
+    </div>
+
+    </section>
+    
+  
+    
+
+    <section id="contact">
+      <div style="background-color:rgb(240, 255, 240);">
+        <section class="clist">
+                
+            <div class="cdiv">
+                <img class="cimage1" src="stick.png" alt="">
+                
+                <h3 class="ch33">Welcome to Desert Delights Bistro,Where Every meal tells a story and Every guest is family</h2>
+                
+            </div>
+            <div class="cdiv1">
+             
+            <h1 class="ch1">For Inquiries and Reservations</h1>
+            <br>
+            <h2 class="ch2">Email:ddb@gmail.com</h2>
+            <h2 class="ch2">Phonenumber:00873737372</h2>
+            </div>
+            <div class="cdiv">
+                <img  class="cimage" src="menu/tuna-salad-with-lettuce-olives-corn-tomatoes-top-view.jpg" alt="">
+                <h3 class="ch33">Address: Dessert Delights Bistro,xxx,yyy,Dubai
+                </h3>
+            
+            </div>
+            </section>
+        </div>
+        
+    </section>
+    <footer class="footer bg-dark">
+      <div class="row" style="padding: 15px;margin-right: 0;--bs-gutter-x: 0;">
+          <div class="col-md-6 text-light" style="padding-top: 25px;" >
+              <p>Copyright &copy; 2023 DESSERTS DELIGHTS BISTRO</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+              <a  href="https://www.instagram.com/" ><img style="width: 70px;" src="svg/Picsart_23-10-22_21-05-48-126.png" alt=""></a>
+              <span class="text-light">|</span>
+              <a  href="https://www.youtube.com/" ><img style="width: 80px;"  src="svg/Picsart_23-10-22_21-06-33-159.png" alt=""></a>
+          </div>
+      </div>
+  </footer>
+  
+    
+
+
+
+        
+</body>
+</html>

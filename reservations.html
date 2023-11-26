@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservations</title>
+    <link rel="stylesheet" href="reservations.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <img src="img/pexels-huỳnh-đạt-2313037.jpg" alt="">
+    <script>
+        let logbox=document.createElement("div")
+        document.body.appendChild(logbox)
+        logbox.setAttribute("id","divvr")
+        logbox.setAttribute("style","width:500px;height:550px")
+
+        let f= document.createElement("form");
+        f.setAttribute("action","index.html")
+        f.setAttribute("id","login")
+        f.setAttribute("name","form")
+       logbox.appendChild(f);
+        let heading= document.createElement("h1")
+heading.innerHTML="Reservation"
+f.appendChild(heading);
+heading.setAttribute("style","color:white;margin-bottom:12%;")
+
+let fnamebox=document.createElement("div")
+fnamebox.setAttribute("id","fname")
+let fn=document.createElement("input")
+fn.setAttribute("type","text")
+fn.setAttribute("name","fn")
+fn.setAttribute("placeholder","Your Name")
+fn.required=true;
+f.appendChild(fnamebox)
+fnamebox.appendChild(fn)
+
+fn.setAttribute("style","border-width:0")
+fn.setAttribute("id","fnameid")
+
+let lnamebox=document.createElement("div")
+lnamebox.setAttribute("id","lname")
+let ln=document.createElement("input")
+ln.setAttribute("type","email")
+ln.setAttribute("name","ln")
+ln.setAttribute("placeholder","Your Email ID")
+ln.required=true;
+f.appendChild(lnamebox)
+lnamebox.appendChild(ln)
+
+ln.setAttribute("style","border-width:0;width:200px")
+ln.setAttribute("id","lnameid")
+
+
+
+
+let userbox=document.createElement("div")
+userbox.setAttribute("id","unbox")
+let inp=document.createElement("input")
+inp.setAttribute("type","number")
+inp.setAttribute("name","mob")
+inp.setAttribute("placeholder","Your Phone")
+inp.required=true;
+f.appendChild(userbox)
+userbox.appendChild(inp)
+
+inp.setAttribute("style","border-width:0")
+inp.setAttribute("id","inpid")
+
+let dtbox=document.createElement("div")
+dtbox.setAttribute("id","dtbox")
+let inp3=document.createElement("input")
+inp3.setAttribute("type","date")
+inp3.setAttribute("placeholder","Date")
+inp3.setAttribute("style","border-width:0")
+inp3.setAttribute("id","dt")
+inp3.setAttribute("name","date")
+inp3.required=true;
+f.appendChild(dtbox)
+dtbox.appendChild(inp3)
+
+let tmbox=document.createElement("div")
+tmbox.setAttribute("id","tmbox")
+let inp4=document.createElement("input")
+inp4.setAttribute("type","time")
+inp4.setAttribute("placeholder","Time")
+inp4.setAttribute("style","border-width:0")
+inp4.setAttribute("id","tm")
+inp4.setAttribute("name","time")
+inp4.required=true;
+f.appendChild(tmbox)
+tmbox.appendChild(inp4) 
+
+
+let pwbox=document.createElement("div")
+pwbox.setAttribute("id","passbox")
+let inp2=document.createElement("input")
+inp2.setAttribute("type","number")
+inp2.setAttribute("placeholder","Number of Guests")
+inp2.setAttribute("style","border-width:0")
+inp2.setAttribute("id","passid")
+inp2.setAttribute("name","guest")
+inp2.required=true;
+f.appendChild(pwbox)
+pwbox.appendChild(inp2) 
+
+let divbut=document.createElement("div")
+divbut.setAttribute("id","divbutt")
+f.appendChild(divbut)
+let butt=document.createElement("input")
+butt.setAttribute("type","button")
+butt.setAttribute("value","Submit")
+// butt.setAttribute("action","demoindex.html")
+butt.setAttribute("onClick","validates()")
+butt.setAttribute("id","idbutt")
+divbut.appendChild(butt)
+
+function validates(){
+        
+        let username =document.form.fn.value;
+        let email =document.form.ln.value;
+        let mobile =document.form.mob.value;
+        let guests=document.form.guest.value;
+        let date=document.form.date.value;
+        let time=document.form.time.value;
+    if(username==""){
+        alert("Name cannot be Empty")
+        return false;
+        }
+   
+    else if(mobile.length!=10){
+        alert("Invalid Mobile Number")
+        return false;
+    }
+    else if(email==""){
+        alert("Email Id cannot be empty")
+        return false;
+    }
+    else if(date==""){
+        alert("Please Mention the Date for Reservation")
+        return false;
+    }
+    else if(time==""){
+        alert("Please Mention the Time for Reservation")
+        return false;
+    }
+    else if(guests==0){
+        alert("Please Enter Number of Guests")
+        return false;
+    }
+    else{
+        alert("Submitted Successfully !!!")
+        window.location.href="reservations.html";
+
+    }
+
+    }
+
+
+    </script>
+</body>
+</html>

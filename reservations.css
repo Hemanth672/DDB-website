@@ -1,0 +1,122 @@
+.imgr{
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    filter: brightness(70%);
+    }
+    #fnameid{
+        width: 200px;
+        outline: 0;
+    }
+    #lnameid{
+        width: 200px;
+        outline: 0;
+    }
+    #fname{
+        background-color:white;
+        width:fit-content;
+        padding: 5px;
+        
+    }
+    #tmbox{
+        margin-top: 8%;
+        background-color:white;
+        width:fit-content;
+        padding: 5px;
+        
+    }
+
+    #dtbox{
+        margin-top: 8%;
+        background-color:white;
+        width:fit-content;
+        padding: 5px;
+        
+    }
+    
+    #lname{
+        background-color:white;
+        width:fit-content;
+        padding: 5px;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    #inpid{
+        width: 200px;
+        outline: 0;
+    }
+    #passid{
+        width:200px;
+        outline: 0;
+    }
+    #dt{
+        width:200px;
+        outline: 0;
+    }
+    #tm{
+        width: 200px;
+        outline: 0;
+    }
+    #unbox{
+        background-color:white;
+        width:fit-content;
+        padding: 5px;
+    }
+    input[type="button" i]{
+        border-radius: 16%;
+        border-inline:unset;
+        
+    
+    }
+    #divbutt{
+        margin-top: 20%;
+        margin-left: 13%;
+        
+    }
+    
+    
+    #passbox{
+       width: fit-content;
+        margin-top: 8%;
+        padding: 5px;
+        background-color: white;
+    
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #idbutt{
+        background-color:rgb(255, 39, 39);color:White;
+        width:160px;height:60px;
+        
+    }
+    #divvr{
+        background-color: rgba(0, 0, 0, 0.719);
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6%;
+        width: 500px;
+        height: 550px;
+        position: absolute;
+        top: 20%;
+        left: 38%;
+        margin: -50px 0 0 -50px;
+}
+    
+        
+    
+    #divdiv{
+        background-color: rgba(250, 235, 215, 0.82);
+        width: 100%;
+        height: 900px;
+        position: relative;
+    
+    
+    }
+    
+    
